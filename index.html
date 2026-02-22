@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium CSS Loaders | Live Preview</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- İŞTE MÜŞTERİNİN KULLANACAĞI ASIL DOSYAYI BURADA BAĞLIYORUZ -->
+    <link rel="stylesheet" href="css/loaders.css">
+
+    <style>
+        /* Sadece bu vitrin sayfasının (Arka plan, grid, yazılar) tasarımı */
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #151b2b;
+            --text-main: #f8fafc;
+            --text-muted: #64748b;
+            --primary-gradient: linear-gradient(135deg, #0ea5e9, #6366f1);
+        }
+
+        body {
+            margin: 0; padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Outfit', sans-serif;
+            min-height: 100vh;
+            display: flex; flex-direction: column; align-items: center;
+        }
+
+        .header {
+            width: 100%; padding: 60px 20px 40px; text-align: center;
+            background: radial-gradient(circle at top, #1e293b 0%, var(--bg-color) 70%);
+            border-bottom: 1px solid rgba(255,255,255,0.05); box-sizing: border-box;
+        }
+
+        .badge {
+            background: rgba(16, 185, 129, 0.1); color: #10b981;
+            padding: 8px 16px; border-radius: 20px; font-size: 14px;
+            font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+            border: 1px solid rgba(16, 185, 129, 0.2); display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 3.5rem; font-weight: 800; margin: 0 0 15px 0;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+
+        .header p { color: var(--text-muted); font-size: 1.2rem; max-width: 600px; margin: 0 auto; line-height: 1.6; }
+
+        .grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px; width: 100%; max-width: 1100px; padding: 50px 20px; box-sizing: border-box;
+        }
+
+        .card {
+            background-color: var(--card-bg); border-radius: 24px; padding: 40px;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            height: 250px; position: relative; border: 1px solid rgba(255,255,255,0.03);
+            transition: all 0.3s ease; cursor: pointer; overflow: hidden;
+        }
+
+        .card:hover { transform: translateY(-10px); border-color: rgba(255,255,255,0.1); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+        .card-title { position: absolute; bottom: 25px; font-size: 14px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 600; transition: color 0.3s ease; }
+        .card:hover .card-title { color: var(--text-main); }
+
+        #toast {
+            position: fixed; bottom: -50px; background: var(--primary-gradient); color: white;
+            padding: 12px 24px; border-radius: 30px; font-weight: 600; transition: bottom 0.3s ease;
+            z-index: 1000; box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="badge">100% Pure CSS</div>
+        <h1>Premium UI Loaders</h1>
+        <p>Meticulously crafted, lightweight, high-performance, and pure CSS loader animations for developers. Integrate into your projects instantly.</p>
+    </div>
+
+    <div class="grid">
+        <div class="card" onclick="copyCode('Neon Ring')">
+            <div class="loader-neon"></div>
+            <div class="card-title">Neon Cyber Ring</div>
+        </div>
+
+        <div class="card" onclick="copyCode('3D Flipping Cube')">
+            <div class="loader-cube"></div>
+            <div class="card-title">3D Flipping Cube</div>
+        </div>
+
+        <div class="card" onclick="copyCode('Atom Orbit')">
+            <div class="loader-atom"></div>
+            <div class="card-title">Atom Orbit</div>
+        </div>
+
+        <div class="card" onclick="copyCode('Pulse Ripple')">
+            <div class="loader-ripple"></div>
+            <div class="card-title">Pulse Ripple</div>
+        </div>
+
+        <div class="card" onclick="copyCode('Typing Dots')">
+            <div class="loader-dots"><div></div><div></div><div></div></div>
+            <div class="card-title">Typing Dots</div>
+        </div>
+
+        <div class="card" onclick="copyCode('Radar Scanner')">
+            <div class="loader-radar"></div>
+            <div class="card-title">Radar Scanner</div>
+        </div>
+    </div>
+
+    <div id="toast">CSS Code Copied! 🚀</div>
+
+    <script>
+        function copyCode(name) {
+            const toast = document.getElementById('toast');
+            toast.innerText = name + ' code copied! 🚀';
+            toast.style.bottom = '30px';
+            setTimeout(() => { toast.style.bottom = '-50px'; }, 2000);
+        }
+    </script>
+</body>
+</html>
