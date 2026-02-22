@@ -12,6 +12,8 @@ Looking for advanced animations like the 3D Flipping Cube, Neon Cyber Ring, and 
 
 https://bdundarr.gumroad.com/l/ufikn
 
+https://effortless-mermaid-446446.netlify.app/
+
 ✨ PRO Version Features:
 
 🚀 6 Unique, highly complex animations
@@ -31,5 +33,6 @@ Link the loaders.css file in your HTML <head>:
 <link rel="stylesheet" href="css/loaders.css">
 
 Add the corresponding <div> to your HTML. Example:
+
 
 <div class="loader-atom"></div>
