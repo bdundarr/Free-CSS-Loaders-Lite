@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://www.google.com/search?q=https://placehold.co/800x200/0b0f19/0ea5e9/png%3Ftext%3DPremium%2BPure%2BCSS%2BLoaders" alt="Premium CSS Loaders Banner">
+<img src="https://www.google.com/url?sa=E&source=gmail&q=https://placehold.co/800x200/0b0f19/0ea5e9/png?text=Premium+Pure+CSS+Loaders" alt="Premium CSS Loaders Banner">
 
 
 ⚡ Pure CSS Loaders (Lite Version)
@@ -62,4 +62,5 @@ If you love this project, please consider giving it a Star ⭐! It helps me crea
 
 
 💼 Gumroad: Your Gumroad Store
+
 
