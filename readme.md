@@ -61,7 +61,6 @@ Since this is 100% CSS, you can easily change the sizes and colors! Just open th
 If you love this project, please consider giving it a Star ⭐! It helps me create more awesome open-source tools.
 
 
-💼 Gumroad: Your Gumroad Store
 
 
 
