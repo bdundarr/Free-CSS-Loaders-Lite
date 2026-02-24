@@ -27,7 +27,7 @@ Upgrade to the PRO Pack and get:
 
 👉 CLICK HERE TO GET THE PRO VERSION ON GUMROAD 👈
 
-bdundarr.gumroad.com/l/ufikn
+https://bdundarr.gumroad.com/l/ufikn
 
 💻 Live Demo (Preview)
 
@@ -62,6 +62,7 @@ If you love this project, please consider giving it a Star ⭐! It helps me crea
 
 
 💼 Gumroad: Your Gumroad Store
+
 
 
 
